@@ -12,14 +12,15 @@ My focus is on delivering robust, user-centric solutions that bridge the gap bet
 - **Mobile:** Dart (Flutter), JavaScript (React Native)
 
 ### **Frontend Development**
-- **Frameworks:** React.js, Vue.js, Next.js
+- **Frameworks:** React.js, Next.js
 - **Mobile:** Flutter, React Native
 - **Styling:** CSS3, SCSS, Tailwind CSS, Styled Components
 
 ### **Backend Development**  
-- **Runtime:** Node.js, Express.js
+- **Web Frameworks:** Node.js/Express.js, FastAPI, Axum, Django
+- **Embedded/IoT:** Arduino, ESP32/ESP8266 (Espressif)
 - **Databases:** MongoDB, PostgreSQL, MySQL, SQLite
-- **ORMs:** Mongoose, Sequelize, TypeORM
+- **ORMs:** SeaORM, SQLAlchemy, Mongoose, Sequelize, TypeORM
 - **APIs:** RESTful Services, GraphQL
 - **Authentication:** JWT, OAuth, Passport.js
 
