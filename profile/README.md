@@ -1,208 +1,215 @@
-# CyberGenii
+<div align="center">
 
-We build scalable software products, developer tools, and open-source libraries
-across web, mobile, embedded systems, and IoT engineering.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0d14,50:0057FF,100:F97316&height=200&section=header&text=CyberGenii&fontSize=70&fontColor=ffffff&fontAlignY=38&desc=Software%20%7C%20Mobile%20%7C%20Embedded%20%7C%20IoT&descSize=18&descAlignY=58&descColor=9ca3af&animation=fadeIn" width="100%"/>
 
-From production-grade backends to Flutter apps, npm packages, and firmware —
-our work focuses on clean architecture, performance, and developer experience.
+[![Website](https://img.shields.io/badge/cybergenii.com-0057FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://cybergenii.com)
+[![Email](https://img.shields.io/badge/Email-F97316?style=for-the-badge&logo=gmail&logoColor=white)](mailto:cybersgenii@gmail.com)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/message/7FQ35RMU2VVZP1)
+[![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)](https://dribbble.com/cybergenii)
+[![Behance](https://img.shields.io/badge/Behance-1769FF?style=for-the-badge&logo=behance&logoColor=white)](https://behance.net/cybergenii)
+
+<br/>
+
+> **We build scalable software products, developer tools, and open-source libraries**
+> **across web, mobile, embedded systems, and IoT engineering.**
+>
+> *From production-grade backends to Flutter apps, npm packages, and firmware —*
+> *clean architecture, performance, and developer experience are non-negotiable.*
+
+</div>
 
 ---
 
 ## 🌟 Flagship Projects
 
+<table>
+<tr>
+<td width="50%" valign="top">
+
 ### ⚡ Ion — C++ Package Manager
+[![Rust](https://img.shields.io/badge/Built%20with-Rust-F97316?style=flat-square&logo=rust&logoColor=white)](https://github.com/cybergenii/ion)
+[![License](https://img.shields.io/badge/License-MIT-0057FF?style=flat-square)](https://github.com/cybergenii/ion)
+[![Status](https://img.shields.io/badge/Status-Active-10B981?style=flat-square)]()
+
 > *Bringing Cargo-style ergonomics to the C++ ecosystem*
 
-A modern C++ package manager and project scaffolding tool written in **Rust**.
-Ion replaces the painful ritual of manual CMake configuration and dependency
-management with a clean CLI, TOML-based manifests, and automatic build file
-generation — the way C++ tooling should have always worked.
+Replaces painful CMake configuration and C++ dependency hell with a clean CLI, TOML manifests, and automatic build file generation.
 
-- `ion new my-app` — scaffold a production-ready C++ project in seconds
-- `ion.toml` — simple, readable dependency manifest (inspired by Cargo.toml)
-- Auto-generates `CMakeLists.txt` — no more hand-written CMake
-- Built-in linter and memory safety checks *(in development)*
-- Dependency resolution via PubGrub algorithm *(in development)*
-- Cross-platform: Linux · macOS · Windows
+```bash
+ion new my-app       # scaffold a C++ project
+ion add fmt spdlog   # add dependencies  
+ion build && ion run # build and run
+```
 
-**Stack:** Rust · TOML · CMake · PubGrub
-→ [github.com/cybergenii/ion](https://github.com/cybergenii/ion)
+**Roadmap:** Dependency resolution via PubGrub · Package registry · Built-in memory safety linter · LSP integration
 
----
+[![View Repo](https://img.shields.io/badge/→%20View%20Repo-0a0d14?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cybergenii/ion)
 
-### 🔥 ExpressBolt — Express.js + Mongoose CRUD Layer
+</td>
+<td width="50%" valign="top">
+
+### 🔥 ExpressBolt — Express + Mongoose Layer
+[![TypeScript](https://img.shields.io/badge/Built%20with-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://github.com/cybergenii/expressbolt)
+[![npm](https://img.shields.io/badge/npm-published-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/expressbolt)
+[![Status](https://img.shields.io/badge/Status-Active-10B981?style=flat-square)]()
+
 > *Stop writing the same route handlers over and over*
 
-A TypeScript npm package that wraps Express.js and Mongoose with a clean
-`CrudController` API. One class handles create, read, update, delete — with
-built-in filtering, sorting, pagination, nested population, field selection,
-duplicate checking, and environment-aware error responses.
+One class replaces hundreds of lines of boilerplate — CRUD, pagination, population, field selection, duplicate checks, error handling.
 
-- `new CrudController({ req, res, next })` → `.getMany()`, `.create()`, `.update()`, `.delete()`
-- `generateDynamicSchema<T>()` — generate Mongoose models from TypeScript interfaces
-- Query string support: `?page=1&limit=10&sort=-createdAt&fields=name,email`
-- Multi-level population: nested `path` + `second_layer_populate`
-- Global `errorCenter()` middleware with dev/production stack trace toggle
+```typescript
+const crud = new CrudController({ req, res, next });
+await crud.getMany<UserI>({
+  modelData: { Model: User, select: ["-password"] },
+  query: req.query, // ?page=1&sort=-createdAt
+});
+```
 
-**Stack:** TypeScript · Express.js · Mongoose · MongoDB
-→ [github.com/cybergenii/expressbolt](https://github.com/cybergenii/expressbolt)
+[![View Repo](https://img.shields.io/badge/→%20View%20Repo-0a0d14?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cybergenii/expressbolt)
 
----
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-### 📊 Andrea Table — React Data Table Component
+### 📊 Andrea Table — React Data Table
+[![TypeScript](https://img.shields.io/badge/Built%20with-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://github.com/cybergenii/andrea-table)
+[![npm](https://img.shields.io/badge/npm-published-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/andrea-table)
+[![Status](https://img.shields.io/badge/Status-Active-10B981?style=flat-square)]()
+
 > *Every admin dashboard needs a great table. Here's ours.*
 
-A fully config-driven React data table component published on npm. Pass a
-single configuration object and get a production-ready table with API
-integration, multi-column sorting, advanced filtering, pagination, CRUD
-actions, custom cell renderers, color theming, and auto-refresh — zero
-boilerplate.
+Config-driven React data table — pass one object, get a production-ready table with API integration, CRUD, sorting, filtering, pagination, custom renderers, and theming.
 
-- Remote API fetching with a single `fetchFn` callback
-- Custom column renderers via `ColumnT<T>[]` — render anything per cell
-- Built-in export, row selection, search, and visibility toggles
-- Color theming via `color` prop — fits any design system
-- Auto-refresh with configurable interval
-- Full TypeScript generics — `TableDataT<YourModel>`
+```tsx
+<NewTable data={{
+  baseUrl: "https://api.example.com",
+  subUrl: "/users",
+  heading: [...],
+  fn: { fetchFn },
+  crud: { add: true, edit: true, delete: true }
+}} />
+```
 
-**Stack:** TypeScript · React · Tailwind CSS · Vite
-→ [github.com/cybergenii/andrea-table](https://github.com/cybergenii/andrea-table)
+[![View Repo](https://img.shields.io/badge/→%20View%20Repo-0a0d14?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cybergenii/andrea-table)
+
+</td>
+<td width="50%" valign="top">
+
+### 📱 Flutter Wireless — Bluetooth Package
+[![Dart](https://img.shields.io/badge/Built%20with-Dart-0175C2?style=flat-square&logo=dart&logoColor=white)](https://github.com/cybergenii/flutter_wireless)
+[![pub.dev](https://img.shields.io/badge/pub.dev-published-0057FF?style=flat-square&logo=dart&logoColor=white)](https://pub.dev/packages/flutter_wireless)
+[![Status](https://img.shields.io/badge/Status-Active-10B981?style=flat-square)]()
+
+> *Bluetooth Serial, done right for Flutter*
+
+Handles device discovery, connection management, data transfer, auto-pairing, bonding, and Bluetooth state monitoring across Android and iOS.
+
+```dart
+NewFlutterBluetooth.instance
+  .startDiscovery()
+  .listen((result) => connectTo(result.device));
+```
+
+**Supports:** SPP · BLE · Multi-connection · Background ops · PIN auto-pair
+
+[![View Repo](https://img.shields.io/badge/→%20View%20Repo-0a0d14?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cybergenii/flutter_wireless)
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🛠️ Tech Stack
 
-### **Languages**
-| Domain | Languages |
-|---|---|
-| Web & Backend | TypeScript · JavaScript (ES6+) |
-| Systems & Firmware | Rust · C · C++ |
-| Scripting & Data | Python |
-| Mobile | Dart |
+<div align="center">
+
+### Languages
+[![My Skills](https://skillicons.dev/icons?i=ts,js,rust,cpp,python,dart&theme=dark)](https://skillicons.dev)
+
+### Frontend & Mobile
+[![My Skills](https://skillicons.dev/icons?i=react,nextjs,flutter,tailwind,scss,vite&theme=dark)](https://skillicons.dev)
+
+### Backend & Systems
+[![My Skills](https://skillicons.dev/icons?i=nodejs,express,fastapi,django,actix&theme=dark)](https://skillicons.dev)
+
+### Databases & DevOps
+[![My Skills](https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis,docker,github&theme=dark)](https://skillicons.dev)
+
+### Cloud & Infrastructure
+[![My Skills](https://skillicons.dev/icons?i=aws,gcp,firebase,nginx,linux&theme=dark)](https://skillicons.dev)
+
+</div>
 
 ---
 
-### **Frontend**
-- **Frameworks:** React.js · Next.js
-- **Styling:** Tailwind CSS · SCSS · Styled Components · CSS3
-- **Build Tools:** Vite · Webpack · Rollup
-- **State Management:** Zustand · Redux · React Query
+### 🔌 Embedded Systems & IoT
+
+<div align="center">
+
+| 🔲 Microcontrollers | 📡 Protocols | 🔧 Toolchains |
+|:---:|:---:|:---:|
+| ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white) ![ESP8266](https://img.shields.io/badge/ESP8266-E7352C?style=flat-square&logo=espressif&logoColor=white) | ![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white) ![BLE](https://img.shields.io/badge/Bluetooth%20LE-0082FC?style=flat-square&logo=bluetooth&logoColor=white) | ![PlatformIO](https://img.shields.io/badge/PlatformIO-F5822A?style=flat-square&logo=platformio&logoColor=white) |
+| ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white) ![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white) | ![WiFi](https://img.shields.io/badge/Wi--Fi%20STA%2FAP-0057FF?style=flat-square&logo=wifi&logoColor=white) ![WebSocket](https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socketdotio&logoColor=white) | ![ESP-IDF](https://img.shields.io/badge/ESP--IDF-E7352C?style=flat-square&logo=espressif&logoColor=white) ![CubeMX](https://img.shields.io/badge/STM32CubeMX-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white) |
+| ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white) | ![I2C](https://img.shields.io/badge/I2C%20%2F%20SPI%20%2F%20UART-555555?style=flat-square) ![GSM](https://img.shields.io/badge/GSM%20%2F%20LTE-F97316?style=flat-square) | ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-003153?style=flat-square) ![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white) |
+
+</div>
+
+<details>
+<summary><b>📋 Full Embedded Capabilities</b></summary>
+<br/>
+
+**Firmware & Dev**
+- Languages: C · C++ · MicroPython · Embedded Rust
+- RTOS: FreeRTOS · Arduino loop model · bare-metal
+- OTA Updates: ESP-IDF OTA · Arduino OTA · custom HTTP update server
+- Debugging: JTAG · SWD · Serial monitor · logic analyzer
+- Power: Deep sleep · light sleep · wake stubs · battery optimization
+
+**Sensors & Peripherals**
+- Environmental: DHT11/22 · BMP280/BME280 · MQ-series gas sensors
+- Motion: MPU6050 (IMU) · HC-SR04 (ultrasonic) · PIR
+- Display: OLED SSD1306 · TFT ILI9341 · e-Paper · 7-segment
+- Connectivity: SIM800L/SIM7600 (GSM/LTE) · NEO-6M (GPS) · nRF24L01 (RF)
+- Actuators: Servo · stepper · DC motor L298N/L293D · relay modules
+- Storage: SD card · EEPROM · LittleFS · SPIFFS
+
+**IoT Architecture**
+- Device → Cloud: MQTT (Mosquitto/HiveMQ) → API → database pipeline
+- Provisioning: BLE + mobile app pairing · captive portal Wi-Fi setup
+- Fleet: Remote OTA · telemetry dashboards · alert thresholds
+- Edge: TensorFlow Lite Micro inference · local decision logic
+
+</details>
 
 ---
 
-### **Mobile**
-- **Cross-Platform:** Flutter · React Native
-- **Native Android:** Java · Kotlin (basic)
-- **Dart Packages:** pub.dev publishing · platform channels · BLE/Bluetooth integration
-- **Device Features:** Camera · GPS · Bluetooth Serial · File System · Push Notifications
+## 📦 All Open Source Projects
+
+<div align="center">
+
+| Project | Stack | Description | Links |
+|---|---|---|---|
+| **ion** | ![Rust](https://img.shields.io/badge/-Rust-F97316?style=flat-square&logo=rust&logoColor=white) | C++ package manager — TOML manifests, CMake generation, Cargo-style CLI | [![GitHub](https://img.shields.io/badge/-Repo-0a0d14?style=flat-square&logo=github)](https://github.com/cybergenii/ion) |
+| **expressbolt** | ![TS](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Express](https://img.shields.io/badge/-Express-000?style=flat-square&logo=express) | CRUD middleware for Express + Mongoose — pagination, population, error handling | [![GitHub](https://img.shields.io/badge/-Repo-0a0d14?style=flat-square&logo=github)](https://github.com/cybergenii/expressbolt) [![npm](https://img.shields.io/badge/-npm-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/expressbolt) |
+| **andrea-table** | ![TS](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black) | Config-driven React data table — API fetching, sorting, filtering, CRUD | [![GitHub](https://img.shields.io/badge/-Repo-0a0d14?style=flat-square&logo=github)](https://github.com/cybergenii/andrea-table) [![npm](https://img.shields.io/badge/-npm-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/andrea-table) |
+| **mich-pages** | ![TS](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black) | CRUD page generator — define fields once, get full Create/Update/View forms | [![GitHub](https://img.shields.io/badge/-Repo-0a0d14?style=flat-square&logo=github)](https://github.com/cybergenii/mich-pages) [![npm](https://img.shields.io/badge/-npm-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/mich-pages) |
+| **flutter_wireless** | ![Dart](https://img.shields.io/badge/-Dart-0175C2?style=flat-square&logo=dart&logoColor=white) ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) | Bluetooth Serial — discovery, connection, data transfer, auto-pairing | [![GitHub](https://img.shields.io/badge/-Repo-0a0d14?style=flat-square&logo=github)](https://github.com/cybergenii/flutter_wireless) [![pub](https://img.shields.io/badge/-pub.dev-0175C2?style=flat-square&logo=dart&logoColor=white)](https://pub.dev/packages/flutter_wireless) |
+| **repoflow** | ![TS](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) | CLI + web UI for GitHub repo automation — commits, backdating, multi-account | [![GitHub](https://img.shields.io/badge/-Repo-0a0d14?style=flat-square&logo=github)](https://github.com/cybergenii/repoflow) [![npm](https://img.shields.io/badge/-npm-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/repoflow) |
+| **termux-nvim** | ![Shell](https://img.shields.io/badge/-Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white) | One-command Neovim + full dev environment for Android via Termux | [![GitHub](https://img.shields.io/badge/-Repo-0a0d14?style=flat-square&logo=github)](https://github.com/cybergenii/termux-nvim) |
+
+</div>
 
 ---
 
-### **Backend**
-- **Node.js:** Express.js · Fastify · NestJS
-- **Rust:** Axum · Actix-web
-- **Python:** FastAPI · Django · Flask
-- **APIs:** RESTful · GraphQL · WebSockets · WebRTC
-- **Authentication:** JWT · OAuth2 · Passport.js · API Keys · 2FA
-- **Task Queues:** BullMQ · Celery
-- **Caching:** Redis · In-memory
+<div align="center">
 
----
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F97316,50:0057FF,100:0a0d14&height=120&section=footer&fontSize=14&fontColor=ffffff&animation=fadeIn" width="100%"/>
 
-### **Databases & ORMs**
-| Type | Technologies |
-|---|---|
-| Relational | PostgreSQL · MySQL · SQLite |
-| NoSQL | MongoDB · Firebase Firestore · Redis |
-| ORMs | SeaORM · TypeORM · Mongoose · SQLAlchemy · Sequelize · Prisma |
-| Migrations | SeaORM Migrate · Alembic · Knex |
+**Building tomorrow's tools, today.**
 
----
+[![Website](https://img.shields.io/badge/cybergenii.com-0057FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://cybergenii.com)
+[![Email](https://img.shields.io/badge/cybersgenii%40gmail.com-F97316?style=for-the-badge&logo=gmail&logoColor=white)](mailto:cybersgenii@gmail.com)
 
-### **Embedded Systems & IoT**
-
-#### Microcontrollers & Platforms
-| Platform | Details |
-|---|---|
-| **ESP32 / ESP32-S3** | Wi-Fi + BLE SoC · dual-core · FreeRTOS · deep sleep · OTA updates |
-| **ESP8266** | Wi-Fi SoC · low-power IoT nodes · AT commands |
-| **Arduino (AVR/ARM)** | ATmega328 · ATmega2560 · Arduino Nano/Uno/Mega |
-| **STM32** | ARM Cortex-M · HAL/LL drivers · CubeMX |
-| **Raspberry Pi** | Linux SBC · GPIO · I2C · SPI · UART · Python/C++ |
-
-#### Communication Protocols
-| Protocol | Use Case |
-|---|---|
-| **MQTT** | Lightweight pub/sub for IoT telemetry |
-| **HTTP / HTTPS** | RESTful device-to-cloud communication |
-| **WebSockets** | Real-time bidirectional device data streams |
-| **Bluetooth Serial (SPP)** | Device pairing and data transfer |
-| **BLE (Bluetooth Low Energy)** | Low-power sensor beaconing and mobile integration |
-| **Wi-Fi (STA/AP/STA+AP)** | Network provisioning and cloud connectivity |
-| **I2C / SPI / UART** | Sensor and peripheral bus communication |
-| **OneWire** | Temperature sensor chains (DS18B20 etc.) |
-| **PWM / ADC / DAC** | Motor control, analog sensing, audio output |
-
-#### Firmware & Embedded Dev
-- **Languages:** C · C++ · MicroPython · Embedded Rust
-- **RTOS:** FreeRTOS · Arduino loop model · bare-metal
-- **Toolchains:** PlatformIO · Arduino IDE · ESP-IDF · STM32CubeIDE
-- **OTA Updates:** ESP-IDF OTA · Arduino OTA · custom HTTP update server
-- **Debugging:** JTAG · SWD · Serial monitor · logic analyzer
-- **Power Management:** Deep sleep · light sleep · wake stubs · battery optimization
-
-#### Sensors & Peripherals
-- **Environmental:** DHT11/22 (temp/humidity) · BMP280/BME280 (pressure/altitude) · MQ-series (gas)
-- **Motion:** MPU6050 (IMU) · HC-SR04 (ultrasonic) · PIR motion sensors
-- **Display:** OLED (SSD1306/SH1106) · TFT LCD (ILI9341) · e-Paper · 7-segment
-- **Connectivity:** SIM800L/SIM7600 (GSM/LTE) · NEO-6M (GPS) · nRF24L01 (RF)
-- **Actuators:** Servo · stepper motor · DC motor (L298N/L293D) · relay modules
-- **Storage:** SD card (SPI) · EEPROM · LittleFS · SPIFFS
-
-#### IoT Architecture
-- **Device → Cloud:** MQTT broker (Mosquitto/HiveMQ) → backend API → database
-- **Device Provisioning:** BLE + mobile app pairing · captive portal Wi-Fi setup
-- **Fleet Management:** Remote OTA · device telemetry dashboards · alert thresholds
-- **Edge Computing:** On-device ML inference (TensorFlow Lite Micro) · local decision logic
-
----
-
-### **DevOps & Infrastructure**
-- **CI/CD:** GitHub Actions · self-hosted runners
-- **Containers:** Docker · Docker Compose
-- **Cloud:** AWS (EC2, S3, Lambda) · GCP · Firebase · DigitalOcean
-- **Reverse Proxy:** Nginx · Caddy
-- **Monitoring:** Uptime checks · log aggregation · error tracking
-
----
-
-### **Developer Tooling**
-- **Editors:** Neovim · VS Code · Android Studio
-- **Version Control:** Git · GitHub · conventional commits
-- **Mobile Dev on Android:** Termux + Neovim environment
-- **Package Publishing:** npm · pub.dev · crates.io
-- **API Testing:** Postman · curl · custom test harnesses
-- **Build Systems:** Cargo · CMake · Make · Gradle
-
----
-
-## 📦 Open Source
-
-| Project | Stack | Description |
-|---|---|---|
-| [ion](https://github.com/cybergenii/ion) | Rust | C++ package manager — TOML manifests, CMake generation, Cargo-style CLI |
-| [expressbolt](https://github.com/cybergenii/expressbolt) | TypeScript · Express · Mongoose | CRUD middleware — pagination, population, error handling |
-| [andrea-table](https://github.com/cybergenii/andrea-table) | TypeScript · React | Config-driven data table with API fetching, sorting, filtering |
-| [mich-pages](https://github.com/cybergenii/mich-pages) | TypeScript · React | CRUD page generator — define fields once, get full forms |
-| [flutter_wireless](https://github.com/cybergenii/flutter_wireless) | Dart · Flutter · Java | Bluetooth Serial — discovery, connection, data transfer |
-| [repoflow](https://github.com/cybergenii/repoflow) | TypeScript · Python · Shell | CLI + web UI for GitHub repo automation |
-| [termux-nvim](https://github.com/cybergenii/termux-nvim) | Shell | Neovim + dev environment setup for Android via Termux |
-
----
-
-## 🌐 Links
-
-🌍 [cybergenii.com](https://cybergenii.com)
-📧 [hello@cybergenii.com](mailto:hello@cybergenii.com)
-💬 [WhatsApp](https://wa.me/message/7FQ35RMU2VVZP1)
-🎨 [Dribbble](https://dribbble.com/cybergenii) · [Behance](https://behance.net/cybergenii)
+</div>
