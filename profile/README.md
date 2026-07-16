@@ -48,6 +48,27 @@ ion build && ion run # build and run
 </td>
 <td width="50%" valign="top">
 
+### 🐍 FastAPI SQLAlchemy Starter — Backend Template
+[![Python](https://img.shields.io/badge/Built%20with-Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/cybergenii/fastapi-sqlalchemy-starter)
+[![Status](https://img.shields.io/badge/Status-Active-10B981?style=flat-square)]()
+
+> *Production-shaped, not toy-shaped.*
+
+A clean FastAPI + async SQLAlchemy skeleton with JWT auth, RBAC, Postgres, Redis, Alembic, and mail already wired — clone it, rename it, and grow domain modules under `app/core/`.
+
+```bash
+uv sync
+cp .env.example .env
+uvicorn main:app --reload
+```
+
+**Stack:** FastAPI · SQLAlchemy 2.x async · asyncpg · JWT + OAuth · Redis · Alembic · uv
+
+[![View Repo](https://img.shields.io/badge/→%20View%20Repo-0a0d14?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cybergenii/fastapi-sqlalchemy-starter)
+
+</td>
+<td width="50%" valign="top">
+
 ### 🔥 ExpressBolt — Express + Mongoose Layer
 [![TypeScript](https://img.shields.io/badge/Built%20with-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://github.com/cybergenii/expressbolt)
 [![npm](https://img.shields.io/badge/npm-published-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/expressbolt)
@@ -197,7 +218,8 @@ NewFlutterBluetooth.instance
 | **mich-pages** | ![TS](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black) | CRUD page generator — define fields once, get full Create/Update/View forms | [![GitHub](https://img.shields.io/badge/-Repo-0a0d14?style=flat-square&logo=github)](https://github.com/cybergenii/mich-pages) [![npm](https://img.shields.io/badge/-npm-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/mich-pages) |
 | **flutter_wireless** | ![Dart](https://img.shields.io/badge/-Dart-0175C2?style=flat-square&logo=dart&logoColor=white) ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) | Bluetooth Serial — discovery, connection, data transfer, auto-pairing | [![GitHub](https://img.shields.io/badge/-Repo-0a0d14?style=flat-square&logo=github)](https://github.com/cybergenii/flutter_wireless) [![pub](https://img.shields.io/badge/-pub.dev-0175C2?style=flat-square&logo=dart&logoColor=white)](https://pub.dev/packages/flutter_wireless) |
 | **repoflow** | ![TS](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) | CLI + web UI for GitHub repo automation — commits, backdating, multi-account | [![GitHub](https://img.shields.io/badge/-Repo-0a0d14?style=flat-square&logo=github)](https://github.com/cybergenii/repoflow) [![npm](https://img.shields.io/badge/-npm-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/repoflow) |
-| **termux-nvim** | ![Shell](https://img.shields.io/badge/-Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white) | One-command Neovim + full dev environment for Android via Termux | [![GitHub](https://img.shields.io/badge/-Repo-0a0d14?style=flat-square&logo=github)](https://github.com/cybergenii/termux-nvim) |
+| **termux-nvim** | ![Shell](https://img.shields.io/badge/-Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white) | One-command Neovim + full dev environment for Android via Termux | [![GitHub](https://img.shields.io/badge/-Repo-0a0d14?style=flat-square&logo=github)](https://github.com/cybergenii/termux-nvim) 
+| **fastapi-sqlalchemy-starter** | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) | Production-shaped FastAPI + async SQLAlchemy backend template — JWT auth, RBAC, Postgres, Redis, Alembic | [![GitHub](https://img.shields.io/badge/-Repo-0a0d14?style=flat-square&logo=github)](https://github.com/cybergenii/fastapi-sqlalchemy-starter) |
 
 </div>
 
